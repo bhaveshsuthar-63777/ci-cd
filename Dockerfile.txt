@@ -1,0 +1,5 @@
+FROM redhat/ubi8:latest
+RUN yum install python -y && pip install flask -y
+WORKDIR /app
+COPY flask.py/app/
+CMD ["python" , "flask.py"]

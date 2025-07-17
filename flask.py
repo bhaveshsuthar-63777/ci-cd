@@ -19,6 +19,9 @@ def contact():
             <input type="submit">
         </form>
     '''
+@app.route('/')
+def index():
+    return '<h1>Welcome to the Root Page</h1>'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False)
